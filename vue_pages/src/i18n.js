@@ -34,7 +34,14 @@ const messages = {
             selectPaper:{
                 label: 'Top Publication',
                 title: '<b>A particular problem founded on the inferential capability of LLMs</b>',
-                intro1: 'In writing now. Will be published on arXiv in Oct. 2023.',
+                intro1: 'Writing now. Will be published on arXiv in Oct. 2023.',
+            }
+        },
+        bookpage:{
+            tab:{
+                books: 'Books',
+                papers: 'Papers',
+                webpages: 'Webpages'
             }
         }
     },
@@ -74,6 +81,13 @@ const messages = {
                 label: '置顶论文',
                 title: '<b>大语言模型推理性能的某个问题</b>',
                 intro1: '正在书写中，预计于2023年10月份发表在arXiv上',
+            }
+        },
+        bookpage:{
+            tab:{
+                books: '书籍和文章',
+                papers: '论文',
+                webpages: '网页'
             }
         }
     }

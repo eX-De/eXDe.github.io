@@ -3,6 +3,9 @@ import PubPage from "./components/PubPage/PubPage.vue";
 import ProjectPage from "./components/ProjectPage/ProjectPage.vue";
 import HomeSubPage from "./components/HomeSubPage/HomeSubPage.vue";
 import BookPage from "./components/BookPage/BookPage.vue";
+import BookTab from "./components/BookPage/BookTab.vue";
+import WebTab from "./components/BookPage/WebTab.vue";
+import PaperTab from "./components/BookPage/PaperTab.vue";
 
 
 const routes = [
@@ -25,7 +28,25 @@ const routes = [
             },
             {
                 path: '/bookshelf',
-                component: BookPage
+                component: BookPage,
+                children:[
+                    {
+                        path: '/bookshelf',
+                        component: BookTab
+                    },
+                    {
+                        path: '/bookshelf/books',
+                        component: BookTab
+                    },
+                    {
+                        path: '/bookshelf/papers',
+                        component: PaperTab
+                    },
+                    {
+                        path: '/bookshelf/webpages',
+                        component: WebTab
+                    },
+                ]
             },
         ]
     },

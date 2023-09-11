@@ -44,21 +44,9 @@ const { locale } = useI18n()
   }
   let currentSubpage = "0"
   const router = useRouter()
-  let handleHome = () => {
-    router.push('/')
-    currentSubpage = "0"
-  }
-  let handlePub = () => {
-    router.push('/publications')
-    currentSubpage = "1"
-  }
-  let handleProj = () => {
-    router.push('/projects')
-    currentSubpage = "2"
-  }
-  let handleBook = () => {
-    router.push('/bookshelf')
-    currentSubpage = "3"
+  let handleMenu = (to, id) => {
+    router.push(to)
+    currentSubpage = id
   }
   const themeStore = useThemeStore()
   let isLightTheme = ref(themeStore.isLightTheme)
@@ -106,25 +94,25 @@ const { locale } = useI18n()
         </div>
         </t-popup>
         <t-menu v-model="currentSubpage">
-          <t-menu-item value="0" @click="handleHome">
+          <t-menu-item value="0" @click="handleMenu('/', '0')">
             <template #icon>
               <t-icon name="home"/>
             </template>
             {{ $t("homepage.anchor.menu.home")}}
           </t-menu-item>
-          <t-menu-item value="1" @click="handlePub">
+          <t-menu-item value="1" @click="handleMenu('/publications', '1')">
             <template #icon>
               <t-icon name="file-1"/>
             </template>
             {{ $t("homepage.anchor.menu.pub")}}
           </t-menu-item>
-          <t-menu-item value="2" @click="handleProj">
+          <t-menu-item value="2" @click="handleMenu('/projects', '2')">
             <template #icon>
               <t-icon name="folder-open"/>
             </template>
             {{ $t("homepage.anchor.menu.proj")}}
           </t-menu-item>
-          <t-menu-item value="3" @click="handleBook">
+          <t-menu-item value="3" @click="handleMenu('/bookshelf', '3')">
             <template #icon>
               <t-icon name="book"/>
             </template>

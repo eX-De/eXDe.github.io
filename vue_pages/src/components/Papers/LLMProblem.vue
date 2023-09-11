@@ -1,13 +1,15 @@
 <script setup>
 
-import LLMProblem from "../Papers/LLMProblem.vue";
-
 </script>
 
 <template>
-<div class="sub-root">
-  <LLMProblem></LLMProblem>
-</div>
+  <t-card class="card" :hover-shadow="true" :bordered="false" style="text-align: left">
+    <div class="title-bar">
+      <div class="label" v-html="$t('homesubpage.selectPaper.label')"></div>
+      <div class="title" v-html="$t('homesubpage.selectPaper.title')"></div>
+    </div>
+    <div class="intro-main" v-html="$t('homesubpage.selectPaper.intro1')"></div>
+  </t-card>
 </template>
 
 <style scoped>

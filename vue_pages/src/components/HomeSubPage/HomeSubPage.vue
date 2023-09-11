@@ -1,6 +1,8 @@
 <script setup>
 import https from "tdesign-icons-vue-next/lib/components/https.js";
 import {IconFont} from "tdesign-icons-vue-next";
+import LLMProblem from "../Papers/LLMProblem.vue";
+import AIDaily from "../Projects/AIDaily.vue";
 const zhihuUrl = 'http://at.alicdn.com/t/c/font_4245404_p8iiben5cw.js'
 const coreModules = [
   'Linear Algebra',
@@ -49,31 +51,8 @@ let handleJump = (val) => {
     <div class="intro-main" v-html="$t('homesubpage.intro.main2')"></div>
     <div class="intro-main" v-html="$t('homesubpage.intro.main3')"></div>
   </t-card>
-  <t-card class="card" :hover-shadow="true" :bordered="false" style="text-align: left">
-    <div class="title-bar">
-      <div class="label" v-html="$t('homesubpage.selectProj.label')"></div>
-      <div class="title" v-html="$t('homesubpage.selectProj.title')"></div>
-    </div>
-    <div class="intro-main" v-html="$t('homesubpage.selectProj.intro1')"></div>
-    <div class="intro-main" v-html="$t('homesubpage.selectProj.intro2')"></div>
-    <img class="intro-img" src="../../assets/HomePage/AI%20Daily%20cover_midres.jpg"/>
-    <template #footer>
-      <t-row :align="'middle'" justify="end" style="gap: 24px">
-        <t-col flex="auto" style="display: inline-flex; justify-content: end">
-          <t-button variant="text" shape="square" @click="handleJump('https://www.zhihu.com/people/ai-daily')" size="large">
-            <t-icon name="link"></t-icon>
-          </t-button>
-        </t-col>
-      </t-row>
-    </template>
-  </t-card>
-  <t-card class="card" :hover-shadow="true" :bordered="false" style="text-align: left">
-    <div class="title-bar">
-      <div class="label" v-html="$t('homesubpage.selectPaper.label')"></div>
-      <div class="title" v-html="$t('homesubpage.selectPaper.title')"></div>
-    </div>
-    <div class="intro-main" v-html="$t('homesubpage.selectPaper.intro1')"></div>
-  </t-card>
+  <AIDaily></AIDaily>
+  <LLMProblem></LLMProblem>
 </div>
 </template>
 

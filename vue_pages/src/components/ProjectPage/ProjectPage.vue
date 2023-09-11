@@ -1,29 +1,12 @@
 <script setup>
-let handleJump = (val) => {
-  window.location.href = val
-}
+import AIDaily from "../Projects/AIDaily.vue";
+
+
 </script>
 
 <template>
 <div class="sub-root">
-  <t-card class="card" :hover-shadow="true" :bordered="false" style="text-align: left">
-    <div class="title-bar">
-      <div class="label" v-html="$t('homesubpage.selectProj.label')"></div>
-      <div class="title" v-html="$t('homesubpage.selectProj.title')"></div>
-    </div>
-    <div class="intro-main" v-html="$t('homesubpage.selectProj.intro1')"></div>
-    <div class="intro-main" v-html="$t('homesubpage.selectProj.intro2')"></div>
-    <img class="intro-img" src="../../assets/HomePage/AI%20Daily%20cover_midres.jpg"/>
-    <template #footer>
-      <t-row :align="'middle'" justify="end" style="gap: 24px">
-        <t-col flex="auto" style="display: inline-flex; justify-content: end">
-          <t-button variant="text" shape="square" @click="handleJump('https://www.zhihu.com/people/ai-daily')" size="large">
-            <t-icon name="link"></t-icon>
-          </t-button>
-        </t-col>
-      </t-row>
-    </template>
-  </t-card>
+  <AIDaily></AIDaily>
 </div>
 </template>
 
