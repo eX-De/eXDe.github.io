@@ -10,8 +10,8 @@ let handleMenu = (to, id) => {
 </script>
 
 <template>
-  <div class="sub-root">
-    <t-head-menu>
+  <div class="book-root">
+    <t-head-menu v-model:value="currentTab">
       <t-menu-item value="0" @click="handleMenu('/bookshelf/books', '0')"> {{$t('bookpage.tab.books')}} </t-menu-item>
       <t-menu-item value="1" @click="handleMenu('/bookshelf/papers', '1')"> {{$t('bookpage.tab.papers')}} </t-menu-item>
       <t-menu-item value="2" @click="handleMenu('/bookshelf/webpages', '2')"> {{$t('bookpage.tab.webpages')}} </t-menu-item>
@@ -21,6 +21,11 @@ let handleMenu = (to, id) => {
 </template>
 
 <style scoped>
+.book-root{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 24px;
+}
 .tab{
   width: 100%;
   display: flex;

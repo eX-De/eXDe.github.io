@@ -158,6 +158,7 @@ const { locale } = useI18n()
   min-width: 1084px;
   height: 100vh;
   position: relative;
+  overflow: hidden;
 }
 .right{
   float: right;
@@ -227,7 +228,6 @@ const { locale } = useI18n()
   width: calc(100vw - 512px);
   min-width: 700px;
   height: calc(100vh - 60px);
-  overflow: auto;
 }
 @media screen and (max-width: 1536px) {
   .anchor{

@@ -52,7 +52,8 @@ let handleJump = (val) => {
 }
 .card{
   width: 100%;
-  max-width: 936px;
   min-width: 600px;
+  margin-bottom: 24px;
+  break-inside: avoid;
 }
 </style>

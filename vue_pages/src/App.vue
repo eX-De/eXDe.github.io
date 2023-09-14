@@ -24,10 +24,12 @@ export default defineComponent({
 :root{
   --bg-img: url("assets/general/background.jpg");
   --anchor-bg-color: rgba(255, 255, 255, 0.6);
+  --sunset-color: rgba(200, 120, 190);
 }
 [custom-theme="dark"] {
   --bg-img: url("assets/general/background-dark.jpg");
   --anchor-bg-color: rgba(0, 0, 0, 0.6);
+  --sunset-color: rgb(108, 54, 102);
 }
 #app{
   padding: 0;
@@ -60,10 +62,25 @@ body{
   width: 100%;
   box-sizing: border-box;
   padding: 24px;
-  display: flex;
-  flex-wrap: wrap;
+  column-count: 2;
   column-gap: 24px;
-  row-gap: 24px;
-  justify-content: space-around;
+  height: 100%;
+  overflow: auto;
+}
+.tab-root{
+  margin-top: 24px;
+  width: 100%;
+  column-count: 2;
+  column-gap: 24px;
+  height: calc( 100vh - 164px );
+  overflow: auto;
+}
+@media screen and (max-width: 1800px){
+  .tab-root{
+    column-count: unset;
+  }
+  .sub-root{
+    column-count: unset;
+  }
 }
 </style>

@@ -31,6 +31,65 @@ const coreModules = [
   'AR & VR',
   'Performance of Computer Systems'
 ]
+
+const tool_sets = [
+  {
+    title: 'Artificial Intelligence',
+    tools: [
+      {
+        name: 'Python',
+        img_url: 'src/assets/HomePage/tools/python.svg'
+      },
+      {
+        name: 'PyTorch',
+        img_url: 'src/assets/HomePage/tools/pytorch.svg'
+      },
+      {
+        name: 'Hugging Face Libs',
+        img_url: 'src/assets/HomePage/tools/huggingface.svg'
+      },
+    ]
+  },
+  {
+    title: 'Web Development',
+    tools: [
+      {
+        name: 'Vue 3',
+        img_url: 'src/assets/HomePage/tools/vue.svg',
+      },
+      {
+        name: 'JavaScript',
+        img_url: 'src/assets/HomePage/tools/javascript.svg',
+      },
+      {
+        name: 'CSS',
+        img_url: 'src/assets/HomePage/tools/css.svg',
+      },
+      {
+        name: 'Figma',
+        img_url: 'src/assets/HomePage/tools/figma.svg',
+      },
+    ]
+  },
+  {
+    title: 'Android Development',
+    tools: [
+      {
+        name: 'Java',
+        img_url: 'src/assets/HomePage/tools/java.svg',
+      }
+    ]
+  },
+  {
+    title: 'Others',
+    tools: [
+      {
+        name: 'PowerPoint',
+        img_url: 'src/assets/HomePage/tools/powerpoint.svg',
+      }
+    ]
+  }
+]
 let handleJump = (val) => {
   window.location.href = val
 }
@@ -38,7 +97,7 @@ let handleJump = (val) => {
 
 <template>
 <div class="sub-root">
-  <t-card class="card" :shadow="true" :bordered="false" style="text-align: left">
+  <t-card class="card" :shadow="true" :bordered="false" style="text-align: left; background: linear-gradient(-45deg, var(--sunset-color) 1%, var(--td-bg-color-container) 13%)">
     <div class="hello" v-html="$t('homesubpage.intro.hello')"></div>
     <div class="intro-main" v-html="$t('homesubpage.intro.main1')"></div>
     <t-collapse style="margin-bottom: 12px">
@@ -50,6 +109,19 @@ let handleJump = (val) => {
     </t-collapse>
     <div class="intro-main" v-html="$t('homesubpage.intro.main2')"></div>
     <div class="intro-main" v-html="$t('homesubpage.intro.main3')"></div>
+  </t-card>
+  <t-card class="card" :shadow="true" :bordered="false" style="text-align: left; background: linear-gradient(-45deg, var(--sunset-color) 1%, var(--td-bg-color-container) 13%)">
+    <div class="title-bar" v-html="$t('homesubpage.tools.title')"></div>
+    <div class="tool-set" v-for="set in tool_sets">
+      <div class="tool-set-title">{{set.title}}</div>
+      <div class="tool-set-content">
+        <div class="tool" v-for="tool in set.tools">
+          <img :src="tool.img_url" class="tool-img"/>
+          <div class="tool-name">{{tool.name}}</div>
+        </div>
+      </div>
+
+    </div>
   </t-card>
   <AIDaily></AIDaily>
   <LLMProblem></LLMProblem>
@@ -88,7 +160,44 @@ let handleJump = (val) => {
 }
 .card{
   width: 100%;
-  max-width: 936px;
   min-width: 600px;
+  margin-bottom: 24px;
+  break-inside: avoid;
+}
+.tool-set{
+  width: 100%;
+  box-sizing: border-box;
+  margin: 12px;
+}
+.tool-set-title{
+  font-size: 18px;
+  text-decoration: underline;
+  margin: 16px 0;
+}
+.tool-set-content{
+  column-count: 2;
+}
+.tool{
+  width: 100%;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  box-shadow: var(--td-shadow-1);
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding-left: 12px;
+  break-inside: avoid;
+  margin-bottom: 24px;
+}
+.tool-img{
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  object-position: center;
+  margin-right: 24px;
+}
+.tool-name{
+  font-size: 18px;
 }
 </style>

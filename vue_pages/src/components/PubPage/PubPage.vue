@@ -35,9 +35,4 @@ import LLMProblem from "../Papers/LLMProblem.vue";
   width: 100%;
   border-radius: 12px;
 }
-.card{
-  width: 100%;
-  max-width: 936px;
-  min-width: 600px;
-}
 </style>

@@ -1,32 +1,43 @@
 <script setup>
+import BookComponent from "./BookComponent.vue";
+
 let handleJump = (val) => {
   window.location.href = val
 }
+const books = [
+  {
+    book_id: 'deep-learning-from-scratch',
+    img_url: 'src/assets/BookPage/Deep_Learning_From_Scratch.png',
+    link1: 'https://www.amazon.co.jp/-/en/%E6%96%8E%E8%97%A4-%E5%BA%B7%E6%AF%85/dp/4873117585/',
+    enable_link2: true,
+    link2: 'https://item.jd.com/13288842.html'
+  },
+  {
+    book_id: 'brief-history-ai',
+    img_url: 'src/assets/BookPage/brief_history_AI.png',
+    link1: 'https://item.jd.com/12786423.html',
+    enable_link2: false,
+    link2: ''
+  }
+]
 </script>
 
 <template>
-<!--<div class="tab-root">-->
-<!--  <t-card class="book" id="deep-learning-from-scratch">-->
-<!--    <div class="card-content">-->
-<!--      <div class="book-img"></div>-->
-<!--      <div class="book-info">-->
-<!--        <div class="book-title"></div>-->
-<!--        <div class="book-description"></div>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    <template #footer>-->
-<!--      <t-row :align="'middle'" justify="end" style="gap: 24px">-->
-<!--        <t-col flex="auto" style="display: inline-flex; justify-content: end">-->
-<!--          <t-button variant="text" shape="square" @click="handleJump('')" size="large">-->
-<!--            <t-icon name="link"></t-icon>-->
-<!--          </t-button>-->
-<!--        </t-col>-->
-<!--      </t-row>-->
-<!--    </template>-->
-<!--  </t-card>-->
-<!--</div>-->
+<div class="tab-root">
+<book-component
+    v-for="(book, index) in books"
+    :book_id="book.book_id"
+    :img_url="book.img_url"
+    :title="$t('bookpage.books[' + index + '].title')"
+    :description="$t('bookpage.books[' + index + '].description')"
+    :link1="book.link1"
+    :link1_des="$t('bookpage.books[' + index + '].link1_des')"
+    :enable_link2="book.enable_link2"
+    :link2="book.link2"
+    :link2_des="$t('bookpage.books[' + index + '].link2_des')"
+></book-component>
+</div>
 </template>
 
 <style scoped>
-
 </style>
