@@ -40,15 +40,15 @@ const tool_sets = [
     tools: [
       {
         name: 'Python',
-        img_url: '../../assets/HomePage/tools/python.svg'
+        img_url: '/HomePage/tools/python.svg'
       },
       {
         name: 'PyTorch',
-        img_url: '../../assets/HomePage/tools/pytorch.svg'
+        img_url: '/HomePage/tools/pytorch.svg'
       },
       {
         name: 'Hugging Face Libs',
-        img_url: '../../assets/HomePage/tools/huggingface.svg'
+        img_url: '/HomePage/tools/huggingface.svg'
       },
     ]
   },
@@ -57,19 +57,19 @@ const tool_sets = [
     tools: [
       {
         name: 'Vue 3',
-        img_url: '../../assets/HomePage/tools/vue.svg',
+        img_url: '/HomePage/tools/vue.svg',
       },
       {
         name: 'JavaScript',
-        img_url: '../../assets/HomePage/tools/javascript.svg',
+        img_url: '/HomePage/tools/javascript.svg',
       },
       {
         name: 'CSS',
-        img_url: '../../assets/HomePage/tools/css.svg',
+        img_url: '/HomePage/tools/css.svg',
       },
       {
         name: 'Figma',
-        img_url: '../../assets/HomePage/tools/figma.svg',
+        img_url: '/HomePage/tools/figma.svg',
       },
     ]
   },
@@ -78,7 +78,7 @@ const tool_sets = [
     tools: [
       {
         name: 'Java',
-        img_url: '../../assets/HomePage/tools/java.svg',
+        img_url: '/HomePage/tools/java.svg',
       }
     ]
   },
@@ -87,7 +87,7 @@ const tool_sets = [
     tools: [
       {
         name: 'PowerPoint',
-        img_url: '../../assets/HomePage/tools/powerpoint.svg',
+        img_url: '/HomePage/tools/powerpoint.svg',
       }
     ]
   }

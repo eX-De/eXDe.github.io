@@ -5,7 +5,7 @@ let handleQR = () => {
 
 
   try {
-    link.href = '../../assets/HomePage/QRcode.png';
+    link.href = '/HomePage/QRcode.png';
     link.download = 'eXDe_homepage.png'; // 如果不提供文件名，将使用 'image.jpg' 作为默认值
     link.click(); // 触发下载
     link.remove(); // 清理创建的元素

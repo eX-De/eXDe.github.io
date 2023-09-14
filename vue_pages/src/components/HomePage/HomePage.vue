@@ -78,7 +78,7 @@ const { locale } = useI18n()
   <div class="root">
     <div class="anchor">
       <div class="anchor_main">
-        <img class="avatar" alt="avatar" src="../../assets/general/eXDe_avatar.png"/>
+        <img class="avatar" alt="avatar" src="/general/eXDe_avatar.png"/>
         <div class="name">{{ $t("homepage.anchor.name")}}</div>
         <div class="nick_name">{{ $t("homepage.anchor.nick_name")}}</div>
         <div class="base-info" @click="handleSchool" style="margin-bottom: 10px">

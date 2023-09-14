@@ -22,12 +22,12 @@ export default defineComponent({
 
 <style>
 :root{
-  --bg-img: url("assets/general/background.jpg");
+  --bg-img: url("/general/background.jpg");
   --anchor-bg-color: rgba(255, 255, 255, 0.6);
   --sunset-color: rgba(200, 120, 190);
 }
 [custom-theme="dark"] {
-  --bg-img: url("assets/general/background-dark.jpg");
+  --bg-img: url("/general/background-dark.jpg");
   --anchor-bg-color: rgba(0, 0, 0, 0.6);
   --sunset-color: rgb(108, 54, 102);
 }
@@ -40,7 +40,7 @@ export default defineComponent({
 }
 @font-face {
   font-family: 'damion';
-  src: url("assets/general/Damion-Regular.ttf") format("truetype");
+  src: url("/general/Damion-Regular.ttf") format("truetype");
 }
 body{
   font-family: "Segoe UI";

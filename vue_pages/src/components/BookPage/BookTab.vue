@@ -8,14 +8,14 @@ let handleJump = (val) => {
 const books = [
   {
     book_id: 'deep-learning-from-scratch',
-    img_url: '../../assets/BookPage/Deep_Learning_From_Scratch.png',
+    img_url: '/BookPage/Deep_Learning_From_Scratch.png',
     link1: 'https://www.amazon.co.jp/-/en/%E6%96%8E%E8%97%A4-%E5%BA%B7%E6%AF%85/dp/4873117585/',
     enable_link2: true,
     link2: 'https://item.jd.com/13288842.html'
   },
   {
     book_id: 'brief-history-ai',
-    img_url: '../../assets/BookPage/brief_history_AI.png',
+    img_url: '/BookPage/brief_history_AI.png',
     link1: 'https://item.jd.com/12786423.html',
     enable_link2: false,
     link2: ''

@@ -12,7 +12,7 @@ let handleJump = (val) => {
     </div>
     <div class="intro-main" v-html="$t('homesubpage.selectProj.intro1')"></div>
     <div class="intro-main" v-html="$t('homesubpage.selectProj.intro2')"></div>
-    <img class="intro-img" src="../../assets/HomePage/AI_Daily_cover_midres.jpg"/>
+    <img class="intro-img" src="/HomePage/AI_Daily_cover_midres.jpg"/>
     <template #footer>
       <t-row :align="'middle'" justify="end" style="gap: 24px">
         <t-col flex="auto" style="display: inline-flex; justify-content: end">
