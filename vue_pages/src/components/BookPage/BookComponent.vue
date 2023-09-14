@@ -11,7 +11,7 @@ const handlePic = (url) => {
 <template>
   <t-card class="book" :id="book_id">
     <div class="card-content">
-      <img class="book-img" :src="handlePic(img_url)"/>
+      <img class="book-img" :src="img_url"/>
       <div class="book-info">
         <div class="book-title">{{title}}</div>
         <div class="book-description">{{description}}</div>

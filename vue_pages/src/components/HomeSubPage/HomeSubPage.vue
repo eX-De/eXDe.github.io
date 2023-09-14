@@ -118,7 +118,7 @@ let handleJump = (val) => {
       <div class="tool-set-title">{{set.title}}</div>
       <div class="tool-set-content">
         <div class="tool" v-for="tool in set.tools">
-          <img :src="handlePic(tool.img_url)" class="tool-img"/>
+          <img :src="tool.img_url" class="tool-img"/>
           <div class="tool-name">{{tool.name}}</div>
         </div>
       </div>
