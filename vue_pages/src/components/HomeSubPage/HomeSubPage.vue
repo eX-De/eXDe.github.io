@@ -31,22 +31,24 @@ const coreModules = [
   'AR & VR',
   'Performance of Computer Systems'
 ]
-
+const handlePic = (url) => {
+  return new URL(url, import.meta.url).href
+}
 const tool_sets = [
   {
     title: 'Artificial Intelligence',
     tools: [
       {
         name: 'Python',
-        img_url: 'src/assets/HomePage/tools/python.svg'
+        img_url: '../../assets/HomePage/tools/python.svg'
       },
       {
         name: 'PyTorch',
-        img_url: 'src/assets/HomePage/tools/pytorch.svg'
+        img_url: '../../assets/HomePage/tools/pytorch.svg'
       },
       {
         name: 'Hugging Face Libs',
-        img_url: 'src/assets/HomePage/tools/huggingface.svg'
+        img_url: '../../assets/HomePage/tools/huggingface.svg'
       },
     ]
   },
@@ -55,19 +57,19 @@ const tool_sets = [
     tools: [
       {
         name: 'Vue 3',
-        img_url: 'src/assets/HomePage/tools/vue.svg',
+        img_url: '../../assets/HomePage/tools/vue.svg',
       },
       {
         name: 'JavaScript',
-        img_url: 'src/assets/HomePage/tools/javascript.svg',
+        img_url: '../../assets/HomePage/tools/javascript.svg',
       },
       {
         name: 'CSS',
-        img_url: 'src/assets/HomePage/tools/css.svg',
+        img_url: '../../assets/HomePage/tools/css.svg',
       },
       {
         name: 'Figma',
-        img_url: 'src/assets/HomePage/tools/figma.svg',
+        img_url: '../../assets/HomePage/tools/figma.svg',
       },
     ]
   },
@@ -76,7 +78,7 @@ const tool_sets = [
     tools: [
       {
         name: 'Java',
-        img_url: 'src/assets/HomePage/tools/java.svg',
+        img_url: '../../assets/HomePage/tools/java.svg',
       }
     ]
   },
@@ -85,7 +87,7 @@ const tool_sets = [
     tools: [
       {
         name: 'PowerPoint',
-        img_url: 'src/assets/HomePage/tools/powerpoint.svg',
+        img_url: '../../assets/HomePage/tools/powerpoint.svg',
       }
     ]
   }
@@ -116,7 +118,7 @@ let handleJump = (val) => {
       <div class="tool-set-title">{{set.title}}</div>
       <div class="tool-set-content">
         <div class="tool" v-for="tool in set.tools">
-          <img :src="tool.img_url" class="tool-img"/>
+          <img :src="handlePic(tool.img_url)" class="tool-img"/>
           <div class="tool-name">{{tool.name}}</div>
         </div>
       </div>
