@@ -19,7 +19,35 @@ const books = [
     link1: 'https://item.jd.com/12786423.html',
     enable_link2: false,
     link2: ''
-  }
+  },
+  {
+    book_id: 'the-foundations-of-science',
+    img_url: 'BookPage/foundations_of_science.png',
+    link1: 'https://www.amazon.com/Foundations-Science-Hypothesis-Value-Method-ebook/dp/B00AQMLHYA/',
+    enable_link2: true,
+    link2: 'https://item.jd.com/10029269419170.html'
+  },
+  {
+    book_id: 'elementary-mathematics-from-higher-standpoint',
+    img_url: 'BookPage/elementary_mathematics_from_higher_standpoint.png',
+    link1: 'https://www.amazon.com/Elementary-Mathematics-Higher-Standpoint-Arithmetic-ebook/dp/B01JAK4LTQ/',
+    enable_link2: true,
+    link2: 'https://item.jd.com/12762005.html'
+  },
+  {
+    book_id: 'mathematical-statistics',
+    img_url: 'BookPage/mathematical_statistics.png',
+    link1: 'https://www.amazon.com/Mathematical-Statistics-Selected-Volumes-Statistical-ebook/dp/B07YYN1P22/',
+    enable_link2: false,
+    link2: ''
+  },
+  {
+    book_id: 'elementary-linear-algebra',
+    img_url: 'BookPage/elementary_linear_algebra.png',
+    link1: 'https://www.amazon.com/Elementary-Linear-Algebra-Applications-Version-ebook/dp/B07ZN7JCKL/',
+    enable_link2: false,
+    link2: ''
+  },
 ]
 </script>
 

@@ -36,8 +36,8 @@ const messages = {
             },
             selectPaper:{
                 label: 'Top Publication',
-                title: '<b>A particular problem founded on the inferential capability of LLMs</b>',
-                intro1: 'Writing now. Will be published on arXiv in Oct. 2023.',
+                title: '<b>Analysis of the Reasoning with Redundant Information Provided Ability of Large Language Models</b>',
+                intro1: 'Recent advancements in Large Language Models (LLMs) have demonstrated impressive capabilities across a range of natural language processing tasks, especially in reasoning, a cornerstone for achieving Artificial General Intelligence (AGI). However, commonly used benchmarks may not fully encapsulate the inferential abilities of these models in real-world scenarios. To address this gap, a new form of Question-Answering (QA) task, termed Reasoning with Redundant Information Provided (RRIP), is introduced. The study designed a modified version of the grade school math 8K (GSM-8K) dataset which has several variants focusing on different attributes of redundant information. This investigation evaluates two popular LLMs, LlaMA2-13B-chat and generative pre-trained transformer 3.5 (GPT-3.5), contrasting their performance on traditional QA tasks against the RRIP tasks. Findings indicate that while these models achieved moderate success on standard QA benchmarks, their performance notably declines when assessed on RRIP tasks. The study not only highlights the limitations of current LLMs in handling redundant information but also suggests that future training of these models should focus on incorporating redundant information into the training data to increase the performance on RRIP tasks.',
             }
         },
         bookpage:{
@@ -50,7 +50,7 @@ const messages = {
                 {
                     title: 'Deep Learning From Scratch',
                     description: 'The Chinese version of this book helps me a lot on the basic concepts in the AI field. Strongly recommend for every beginners. Only Chinese and Japanese versions are available.',
-                    link1_des: 'Japan Ver.',
+                    link1_des: 'Japanese Ver.',
                     link2_des: 'Chinese Ver.'
                 },
                 {
@@ -58,7 +58,31 @@ const messages = {
                         description: 'When I first began to enter the field of artificial intelligence, in order to have a more systematic understanding of the field of artificial intelligence, I think it is necessary to find a book to explain the history of artificial intelligence. A relatively new book on the market at present is this Brief History of Artificial Intelligence by Nick.',
                     link1_des: 'Chinese Ver.',
                     link2_des: ''
-                }
+                },
+                {
+                    title: 'The Foundations of Science: Science and Hypothesis, The Value of Science, Science and Method',
+                    description: 'To start my career of doing research, I believe a set of methodology is needed to guide me on scientific research. This set of books written by Jules Henri Poincaré, is a tetralogy of science philosophy. Some idea and thoughts of Poincaré can be very helpful for us to form a better understanding on the spirit of science.',
+                    link1_des: 'English Ver.',
+                    link2_des: 'Chinese Ver.'
+                },
+                {
+                    title: 'Elementary Mathematics from a Higher Standpoint',
+                    description: 'I decided to study the advanced mathematics to form a solid foundation for doing research in Artificial Intelligence area. To find a better approach of learning mathematics and get to know the basic methodology of the development of math, I find this set of book to help me.',
+                    link1_des: 'English Ver.',
+                    link2_des: 'Chinese Ver.'
+                },
+                {
+                    title: 'Mathematical Statistics: Basic Ideas and Selected Topics (2nd ed.)',
+                    description: 'This is a great textbook for the beginners of statistics. The reason I chose this textbook for self-study is this book tells us the intuition of the mathematical concepts, and the reason of using these mathematical definitions, which is my primary standard of choosing math textbooks.',
+                    link1_des: 'English Ver.',
+                    link2_des: ''
+                },
+                {
+                    title: 'Elementary Linear Algebra (12th ed., written by H. Anton, C. Rorres, A. Kaul)',
+                    description: 'This is a great textbook for the beginners of Linear Algebra. The reason I chose this textbook for self-study is this book tells us the intuition of the mathematical concepts, and the reason of using these mathematical definitions, which is my primary standard of choosing math textbooks.',
+                    link1_des: 'English Ver.',
+                    link2_des: ''
+                },
             ],
             papers:[
                 {description: 'The goal of this paper is to give language models the ability to generate something like chains of thought - a series of coherent intermediate reasoning steps that lead to a final answer to a question.'},
@@ -112,8 +136,8 @@ const messages = {
             },
             selectPaper:{
                 label: '置顶论文',
-                title: '<b>大语言模型推理性能的某个问题</b>',
-                intro1: '正在书写中，预计于2023年10月份发表在arXiv上',
+                title: '<b>对大语言模型基于冗余信息推理能力的分析</b>',
+                intro1: 'Recent advancements in Large Language Models (LLMs) have demonstrated impressive capabilities across a range of natural language processing tasks, especially in reasoning, a cornerstone for achieving Artificial General Intelligence (AGI). However, commonly used benchmarks may not fully encapsulate the inferential abilities of these models in real-world scenarios. To address this gap, a new form of Question-Answering (QA) task, termed Reasoning with Redundant Information Provided (RRIP), is introduced. The study designed a modified version of the grade school math 8K (GSM-8K) dataset which has several variants focusing on different attributes of redundant information. This investigation evaluates two popular LLMs, LlaMA2-13B-chat and generative pre-trained transformer 3.5 (GPT-3.5), contrasting their performance on traditional QA tasks against the RRIP tasks. Findings indicate that while these models achieved moderate success on standard QA benchmarks, their performance notably declines when assessed on RRIP tasks. The study not only highlights the limitations of current LLMs in handling redundant information but also suggests that future training of these models should focus on incorporating redundant information into the training data to increase the performance on RRIP tasks.',
             }
         },
         bookpage:{
@@ -134,7 +158,31 @@ const messages = {
                     description: '在我刚开始入门人工智能领域的时候，为了对人工智能领域有一个比较系统的认识，我认为有必要找到一本书来讲解一下人工智能的发展史。目前在市面上比较新的书就是这本由尼克所著的《人工智能简史》。',
                     link1_des: '中文版',
                     link2_des: ''
-                }
+                },
+                {
+                    title: '庞加莱科学哲学四部曲：科学与假设、科学与方法、科学的价值、最后的沉思',
+                    description: '为了开始我的研究生涯，我相信我需要一套方法论来指导我的科研。这套书是由儒勒·昂利·庞加莱所作的科学哲学四部曲。我相信书中的一些观点和思想对我们更好地理解科学精神是很有帮助的。',
+                    link1_des: '英文版',
+                    link2_des: '中文版'
+                },
+                {
+                    title: '高观点下的初等数学',
+                    description: '我打算重新自学高等数学，为未来我进行人工智能领域的研究打下坚实的基础。这套书可以帮我找到一种更好的学习数学的方法，了解数学发展的基本方法论。',
+                    link1_des: '英文版',
+                    link2_des: '中文版'
+                },
+                {
+                    title: '数理统计：基本思想与重点专题（第二版）',
+                    description: '对于统计学初学者来说，这是一本很棒的教科书。我选择这本教科书进行自学的原因是因为这本书告诉了我们数学家发明数学概念时的直觉，以及数学家们使用这些数学定义的原因，这是我选择数学教材的主要标准。',
+                    link1_des: '英文版',
+                    link2_des: ''
+                },
+                {
+                    title: '初等线性代数 (第十二版, 作者是H. Anton, C. Rorres, A. Kaul)',
+                    description: '对于线性代数初学者来说，这是一本很棒的教科书。我选择这本教科书进行自学的原因是因为这本书告诉了我们数学家发明数学概念时的直觉，以及数学家们使用这些数学定义的原因，这是我选择数学教材的主要标准。',
+                    link1_des: '英文版',
+                    link2_des: ''
+                },
             ],
             papers:[
                 {description: '本文的目标是赋予语言模型生成类似思维链的能力——一系列连贯的中间推理步骤，从而得出问题的最终答案。'},
