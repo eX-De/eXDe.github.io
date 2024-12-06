@@ -5,7 +5,7 @@ import ProjCard from "./ProjCard.vue"
 const projs = [
   {
     proj_id: 'AIDaily',
-    img_url: '/HomePage/AI_Daily_cover_midres.jpg',
+    img_url: 'HomePage/AI_Daily_cover_midres.jpg',
     link: 'https://www.zhihu.com/people/ai-daily',
     enable_link: true
   }
