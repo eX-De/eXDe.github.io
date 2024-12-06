@@ -7,7 +7,7 @@ const messages = {
             anchor:{
                 name: 'Wenbei Xie',
                 nick_name: 'eX-De',
-                school: 'Beijing University of Technology',
+                school: 'The University of Manchester',
                 clickCopy: 'Click to copy',
                 menu: {
                     home: 'Home',
@@ -20,25 +20,42 @@ const messages = {
         homesubpage:{
             intro:{
                 hello: 'Hi👋! Welcome to eX-De\'s personal homepage!',
-                main1: 'I\'m currently an <b>4th grade undergraduate student</b> at <u>Beijing University of Technology</u> & <u>University College Dublin</u> who is majored in <b>Software Engineering</b> (2020-).During my university learning time, I have gained a comprehensive understanding of the whole subject area through the following courses.',
-                coreCourseLearnt: 'Core Modules I Have Learned',
-                main2: 'My research objective is to investigate and improve <b>inferential capability of language models</b>, especially Large Language Models. To make further progress on this objective, I believe it is necessary to apply our knowledge about <b>the procedure of human cognition</b> into the model design and development of other related techniques.',
-                main3: 'As a 4th undergraduate student, I\'m currently looking for any opportunities of making research about <b>inferential capability of Large Language Models</b> in top universities around the world.'
+                main1: 'I\'m currently an <b>post-graduate student</b> at <u>The University of Manchester</u> who is majored in <b>Artificial Intelligence</b> (2024-). I have chosen the following courses for my study at UoM.',
+                coreCourseLearnt: 'Core Modules in UoM',
+                main2: 'My research objective is to investigate and improve <b>reasoning ability of language models</b>, especially Large Language Models. To make further progress on this objective, I believe it is necessary to apply our knowledge about <b>the procedure of human cognition</b> into the model design and development of other related techniques.',
+                main3: 'As a post-graduate student, I\'m currently looking for any Ph.D. opportunities of making research about <b>reasoning ability of Large Language Models</b> in top universities around the world.'
             },
             tools:{
                 title: 'Learned Skills & Tools'
             },
             selectProj:{
                 label: 'Top Project',
-                title: '<b>✨AI Daily✨</b>',
-                intro1: 'AI Daily is a knowledge-sharing account operated by myself. The aim of AI Daily is to share one AI-related knowledge point everyday.',
-                intro2: '✨AI Daily 2023 Autumn Vol. is publishing now✨'
+                title: '<b>✨LLM Chat Extension✨</b>',
+                intro1: 'By making a revolution to the management of chat history of LLMs, users can make more values from their chat history.',
+                intro2: 'In progress, demo will be presented in 3 months.'
             },
             selectPaper:{
                 label: 'Top Publication',
-                title: '<b>Analysis of the Reasoning with Redundant Information Provided Ability of Large Language Models</b>',
-                intro1: 'Recent advancements in Large Language Models (LLMs) have demonstrated impressive capabilities across a range of natural language processing tasks, especially in reasoning, a cornerstone for achieving Artificial General Intelligence (AGI). However, commonly used benchmarks may not fully encapsulate the inferential abilities of these models in real-world scenarios. To address this gap, a new form of Question-Answering (QA) task, termed Reasoning with Redundant Information Provided (RRIP), is introduced. The study designed a modified version of the grade school math 8K (GSM-8K) dataset which has several variants focusing on different attributes of redundant information. This investigation evaluates two popular LLMs, LlaMA2-13B-chat and generative pre-trained transformer 3.5 (GPT-3.5), contrasting their performance on traditional QA tasks against the RRIP tasks. Findings indicate that while these models achieved moderate success on standard QA benchmarks, their performance notably declines when assessed on RRIP tasks. The study not only highlights the limitations of current LLMs in handling redundant information but also suggests that future training of these models should focus on incorporating redundant information into the training data to increase the performance on RRIP tasks.',
+                title: '<b>MathLearner: A Large Language Model Agent Framework for Learning to Solve Mathematical Problems</b>',
+                intro1: 'With the development of artificial intelligence (AI), large language models (LLM) are widely used in many fields. However, the reasoning ability of LLM is still very limited when it comes to mathematical reasoning. Mathematics plays an important role in all aspects of human society and is a technical guarantee in the fields of healthcare, transport and aerospace, for this reason, the development of AI big language models in the field of mathematics has great potential significance. To improve the mathematical reasoning ability of large language models, we proposed an agent framework for learning to solve mathematical problems based on inductive reasoning. By emulating the human learning process of generalization of learned information and effective application of previous knowledge in new reasoning tasks, this framework has great performance in the mathematical reasoning process. It improves global accuracy over the baseline method (chain-of-thought) by 20.96% and solves 17.54% of the mathematical problems that the baseline cannot solve. Benefiting from the efficient RETRIEVAL method, our model improves the ability of large language models to efficiently use external knowledge, i.e., the mathematical computation of the model can be based on written procedures. In education, our model can be used as a personalised learning aid, thus reducing the inequality of educational resources.',
             }
+        },
+        projpage:{
+            projects:[
+                {
+                    title: '<b>AI Daily</b>',
+                    intro1: 'AI Daily is a knowledge-sharing account operated by myself. The aim of AI Daily is to share one AI-related knowledge point everyday.',
+                    intro2: ''
+                },
+            ]
+        },
+        pubpage:{
+            papers:[
+                {
+                    title: '<b>Analysis of the Reasoning with Redundant Information Provided Ability of Large Language Models</b>',
+                    intro1: 'Recent advancements in Large Language Models (LLMs) have demonstrated impressive capabilities across a range of natural language processing tasks, especially in reasoning, a cornerstone for achieving Artificial General Intelligence (AGI). However, commonly used benchmarks may not fully encapsulate the inferential abilities of these models in real-world scenarios. To address this gap, a new form of Question-Answering (QA) task, termed Reasoning with Redundant Information Provided (RRIP), is introduced. The study designed a modified version of the grade school math 8K (GSM-8K) dataset which has several variants focusing on different attributes of redundant information. This investigation evaluates two popular LLMs, LlaMA2-13B-chat and generative pre-trained transformer 3.5 (GPT-3.5), contrasting their performance on traditional QA tasks against the RRIP tasks. Findings indicate that while these models achieved moderate success on standard QA benchmarks, their performance notably declines when assessed on RRIP tasks. The study not only highlights the limitations of current LLMs in handling redundant information but also suggests that future training of these models should focus on incorporating redundant information into the training data to increase the performance on RRIP tasks.',
+                }
+            ]
         },
         bookpage:{
             tab:{
@@ -86,6 +103,7 @@ const messages = {
             ],
             papers:[
                 {description: 'The goal of this paper is to give language models the ability to generate something like chains of thought - a series of coherent intermediate reasoning steps that lead to a final answer to a question.'},
+                {description: 'This paper provides a feasible method to edit the selected memories in large language models. It can support around 10k times of edits with little performance loss.'},
                 {description: 'This article proposes REMEMBERER, which can selectively leverage the experiences stored in memory to optimize decisions based on the current state of the interaction. At the same time, experiential memory can be constantly updated through reinforcement learning processes.'},
                 {description: 'This paper makes small models (less than 100B parameters) perform better on inference tasks by fine-tuning away some of the general capabilities.'},
                 {description: 'This post is a survey of the current challenges encountered in the field of LLMs.'},
@@ -107,7 +125,7 @@ const messages = {
             anchor:{
                 name: '谢文贝',
                 nick_name: 'eX-De',
-                school: '北京工业大学',
+                school: '曼彻斯特大学',
                 clickCopy: '点击复制',
                 menu: {
                     home: '主页',
@@ -120,25 +138,42 @@ const messages = {
         homesubpage:{
             intro:{
                 hello: 'Hi👋! 欢迎来到eX-De的个人主页！',
-                main1: '我目前是一名正在就读<u>北京工业大学</u>和<u>都柏林大学学院</u>联合学士学位的<b>大四</b>学生。我的专业是<b>软件工程</b>。在我的大学学习生活中，我通过如下的课程对本领域的知识有了一定的理解。',
+                main1: '我目前是一名正在就读<u>曼彻斯特大学</u>和<u>都柏林大学学院</u>授课硕士的学生。我的专业是<b>人工智能</b>。我目前正在或即将学习下面的课程。',
                 coreCourseLearnt: '核心课程列表',
                 main2: '我的研究目标是研究和提高语言模型，特别是大型语言模型的<b>推理能力</b>。为了在这一目标上取得进展，我认为有必要将我们对<b>人类认知的过程</b>的知识应用到模型设计和其他相关技术的研发中。',
-                main3: '作为大四的学生，我目前正在寻找在世界各地的顶尖大学中研究<b>大型语言模型推理能力</b>的机会。'
+                main3: '作为硕士研究生，我目前正在寻找在世界各地的顶尖大学中研究<b>大型语言模型推理能力</b>的博士研究生机会。'
             },
             tools:{
                 title: '学过的工具和技术'
             },
             selectProj:{
                 label: '置顶项目',
-                title: '<b>✨AI Daily✨</b>',
-                intro1: 'AI Daily是由我个人运营的知识分享账号，致力于每天分享一个AI领域的知识点。',
-                intro2: '✨目前AI Daily 2023 秋季专辑正在更新中✨'
+                title: '<b>✨LLM Chat Extension✨</b>',
+                intro1: '目前的面向消费者的LLM对话应用里的对话历史已经变成一滩没有实际作用的数据沼泽，LLM Chat Extension致力于改善这种情况使得对话历史能为用户带来更大的价值。',
+                intro2: '开发中，预计在3个月内放出第一版demo'
             },
             selectPaper:{
                 label: '置顶论文',
-                title: '<b>对大语言模型基于冗余信息推理能力的分析</b>',
-                intro1: 'Recent advancements in Large Language Models (LLMs) have demonstrated impressive capabilities across a range of natural language processing tasks, especially in reasoning, a cornerstone for achieving Artificial General Intelligence (AGI). However, commonly used benchmarks may not fully encapsulate the inferential abilities of these models in real-world scenarios. To address this gap, a new form of Question-Answering (QA) task, termed Reasoning with Redundant Information Provided (RRIP), is introduced. The study designed a modified version of the grade school math 8K (GSM-8K) dataset which has several variants focusing on different attributes of redundant information. This investigation evaluates two popular LLMs, LlaMA2-13B-chat and generative pre-trained transformer 3.5 (GPT-3.5), contrasting their performance on traditional QA tasks against the RRIP tasks. Findings indicate that while these models achieved moderate success on standard QA benchmarks, their performance notably declines when assessed on RRIP tasks. The study not only highlights the limitations of current LLMs in handling redundant information but also suggests that future training of these models should focus on incorporating redundant information into the training data to increase the performance on RRIP tasks.',
+                title: '<b>MathLearner：一种通过学习解决数学问题的大语言模型代理</b>',
+                intro1: 'With the development of artificial intelligence (AI), large language models (LLM) are widely used in many fields. However, the reasoning ability of LLM is still very limited when it comes to mathematical reasoning. Mathematics plays an important role in all aspects of human society and is a technical guarantee in the fields of healthcare, transport and aerospace, for this reason, the development of AI big language models in the field of mathematics has great potential significance. To improve the mathematical reasoning ability of large language models, we proposed an agent framework for learning to solve mathematical problems based on inductive reasoning. By emulating the human learning process of generalization of learned information and effective application of previous knowledge in new reasoning tasks, this framework has great performance in the mathematical reasoning process. It improves global accuracy over the baseline method (chain-of-thought) by 20.96% and solves 17.54% of the mathematical problems that the baseline cannot solve. Benefiting from the efficient RETRIEVAL method, our model improves the ability of large language models to efficiently use external knowledge, i.e., the mathematical computation of the model can be based on written procedures. In education, our model can be used as a personalised learning aid, thus reducing the inequality of educational resources.',
             }
+        },
+        projpage:{
+            projects: [
+                {
+                    title: '<b>AI Daily</b>',
+                    intro1: 'AI Daily是由我个人运营的知识分享账号，致力于每天分享一个AI领域的知识点。(暂时停更）',
+                    intro2: ''
+                },
+            ]
+        },
+        pubpage:{
+            papers:[
+                {
+                    title: '<b>对大语言模型基于冗余信息推理能力的分析</b>',
+                    intro1: 'Recent advancements in Large Language Models (LLMs) have demonstrated impressive capabilities across a range of natural language processing tasks, especially in reasoning, a cornerstone for achieving Artificial General Intelligence (AGI). However, commonly used benchmarks may not fully encapsulate the inferential abilities of these models in real-world scenarios. To address this gap, a new form of Question-Answering (QA) task, termed Reasoning with Redundant Information Provided (RRIP), is introduced. The study designed a modified version of the grade school math 8K (GSM-8K) dataset which has several variants focusing on different attributes of redundant information. This investigation evaluates two popular LLMs, LlaMA2-13B-chat and generative pre-trained transformer 3.5 (GPT-3.5), contrasting their performance on traditional QA tasks against the RRIP tasks. Findings indicate that while these models achieved moderate success on standard QA benchmarks, their performance notably declines when assessed on RRIP tasks. The study not only highlights the limitations of current LLMs in handling redundant information but also suggests that future training of these models should focus on incorporating redundant information into the training data to increase the performance on RRIP tasks.',
+                }
+            ]
         },
         bookpage:{
             tab:{
@@ -186,6 +221,7 @@ const messages = {
             ],
             papers:[
                 {description: '本文的目标是赋予语言模型生成类似思维链的能力——一系列连贯的中间推理步骤，从而得出问题的最终答案。'},
+                {description: '本文提出了一种可行的大模型记忆修改方法，可以实现在应用将近1w条修改后仅有轻微的性能损失。'},
                 {description: '本文提出了REMEMBERER，它可以根据当前交互状态选择性地利用记忆中存储的经验来优化决策。同时，经验记忆可以通过强化学习过程不断更新。'},
                 {description: '这篇文章通过微调抛弃一部分通用能力来让小型的模型（参数量小于100B）也能在推理任务上有更好的表现。'},
                 {description: '这篇文章是对目前语言大模型领域遇到的挑战的一篇综述。'},

@@ -1,12 +1,31 @@
 <script setup>
-import AIDaily from "../Projects/AIDaily.vue";
+import selectedProj from "../SelectedComponents/SelectedProjCard.vue";
+import ProjCard from "./ProjCard.vue"
 
-
+const projs = [
+  {
+    proj_id: 'AIDaily',
+    img_url: '/HomePage/AI_Daily_cover_midres.jpg',
+    link: 'https://www.zhihu.com/people/ai-daily',
+    enable_link: true
+  }
+]
 </script>
 
 <template>
 <div class="sub-root">
-  <AIDaily></AIDaily>
+  <selectedProj></selectedProj>
+  <proj-card
+    v-for="(proj, index) in projs"
+    :proj_id="proj.proj_id"
+    :img_url="proj.img_url"
+    :title="$t('projpage.projects[' + index + '].title')"
+    :intro1="$t('projpage.projects[' + index + '].intro1')"
+    :intro2="$t('projpage.projects[' + index + '].intro2')"
+    :link="proj.link"
+    :enable_link="proj.enable_link"
+  />
+
 </div>
 </template>
 

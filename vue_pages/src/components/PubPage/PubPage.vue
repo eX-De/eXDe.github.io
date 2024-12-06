@@ -1,12 +1,25 @@
 <script setup>
 
-import LLMProblem from "../Papers/LLMProblem.vue";
-
+import SelectedPaper from "../SelectedComponents/SelectedPaper.vue";
+import PaperCard from "./PaperCard.vue"
+const papers = [
+  {
+    enable_link: true,
+    link: 'https://arxiv.org/abs/2310.04039'
+  }
+]
 </script>
 
 <template>
 <div class="sub-root">
-  <LLMProblem></LLMProblem>
+  <selected-paper></selected-paper>
+  <paper-card
+    v-for="(paper, index) in papers"
+    :title="$t('pubpage.papers[' + index + '].title')"
+    :intro1="$t('pubpage.papers[' + index + '].intro1')"
+    :link="paper.link"
+    :enable_link="paper.enable_link"
+    />
 </div>
 </template>
 

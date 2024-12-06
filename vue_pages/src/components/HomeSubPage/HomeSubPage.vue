@@ -1,35 +1,16 @@
 <script setup>
 import https from "tdesign-icons-vue-next/lib/components/https.js";
 import {IconFont} from "tdesign-icons-vue-next";
-import LLMProblem from "../Papers/LLMProblem.vue";
-import AIDaily from "../Projects/AIDaily.vue";
+import LLMProblem from "../SelectedComponents/SelectedPaper.vue";
+import AIDaily from "../SelectedComponents/SelectedProjCard.vue";
 const zhihuUrl = 'http://at.alicdn.com/t/c/font_4245404_p8iiben5cw.js'
 const coreModules = [
-  'Linear Algebra',
-  'Advanced Mathematics (Calculus)',
-  'Intro to Program Construction',
-  'Probability & Statistics',
-  'Academic Writing',
-  'Data Structures & Algorithms',
-  'Object-Oriented Programming',
-  'Operating Systems',
-  'Discrete Mathematics',
-  'Computer Networks',
-  'Databases & Information Systems',
-  'Distributed Systems',
-  'Mobile Computing',
-  'Object-Oriented Design',
-  'Software Methodology',
-  'Web Development',
-  'Computer Graphics',
-  'Information Retrieval',
-  'System Design & Verification',
-  'Software Systems Architecture',
-  'Agile Processes',
-  'Design Patterns',
-  'Machine Learning',
-  'AR & VR',
-  'Performance of Computer Systems'
+    'Data Engineering',
+    'Foundations of Machine Learning',
+    'Representation Learning',
+    'Text Mining',
+    'Reasoning and Learning under Uncertainty',
+    'Reinforcement Learning'
 ]
 const handlePic = (url) => {
   return new URL(url, import.meta.url).href
@@ -58,6 +39,10 @@ const tool_sets = [
       {
         name: 'Vue 3',
         img_url: 'HomePage/tools/vue.svg',
+      },
+      {
+        name: 'React',
+        img_url: 'HomePage/tools/react.svg',
       },
       {
         name: 'JavaScript',

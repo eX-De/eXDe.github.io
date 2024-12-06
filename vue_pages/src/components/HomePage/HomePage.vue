@@ -7,6 +7,8 @@ import {h, ref} from "vue";
 import ShareModal from "./ShareModal.vue";
 import {MessagePlugin} from "tdesign-vue-next";
 const { locale } = useI18n()
+
+const email = 'wenbei.xie@postgrad.manchester.ac.uk'
   const langStore = useLangStore()
   let handleLang = () => {
     if (langStore.lang === 'zh'){
@@ -29,14 +31,14 @@ const { locale } = useI18n()
   }
   let handleSchool = () => {
     if (langStore.lang === 'en') {
-      window.location.href = 'https://english.bjut.edu.cn/'
+      window.location.href = 'https://www.manchester.ac.uk/'
     }else {
-      window.location.href = 'https://www.bjut.edu.cn/'
+      window.location.href = 'https://www.manchester.ac.uk/'
     }
   }
   let handleEmail = () => {
     try{
-      navigator.clipboard.writeText('wenbei.xie@ucdconnect.ie')
+      navigator.clipboard.writeText(email)
       MessagePlugin.info('Email copied')
     } catch (err) {
       MessagePlugin.error('Failed to copy email')
@@ -89,7 +91,7 @@ const { locale } = useI18n()
                  trigger="hover" placement="bottom">
         <div class="base-info" @click="handleEmail" style="margin-bottom: 40px">
           <t-icon name="mail" style="width: 20px; height: 20px; margin-right: 10px"/>
-          <p style="margin-right: 10px">wenbei.xie@ucdconnect.ie</p>
+          <p style="margin-right: 10px">{{email}}</p>
           <t-icon name="file-copy" style="width: 18px; height: 18px; color: var(--td-text-color-secondary)"/>
         </div>
         </t-popup>
